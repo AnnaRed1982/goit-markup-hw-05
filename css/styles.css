@@ -140,14 +140,14 @@ nav {
 }
 .nav-site {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 50px;
 }
 
 .nav-link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 
   color: var(--accentblack);
   font-weight: 500;
@@ -159,6 +159,24 @@ nav {
 .nav-link:focus,
 .nav-link.current {
   color: var(--blue);
+}
+.nav-link.current {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link.current::after {
+  content: '';
+  display: block;
+
+  min-width: 48px;
+  height: 4px;
+
+  background-color: var(--blue);
+  border-radius: 2px;
 }
 
 .header-contact {
@@ -569,4 +587,20 @@ nav {
 .portf-text {
   font-size: 16px;
   line-height: 1.9;
+}
+
+/* Modal */
+.backdrop {
+}
+.is-hidden {
+}
+.modal {
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--white);
+  border: 1px solid var(--boxshadow1);
+}
+.modal-icon {
+  display: block;
 }
