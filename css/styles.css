@@ -218,7 +218,6 @@ nav {
   background-color: var(--overlaybg);
   background-image: linear-gradient(to right, var(--gradhero), var(--gradhero)),
     url('../img/hero.jpg');
-  /* background-image: url('../img/hero.jpg'); */
 
   background-repeat: no-repeat;
   background-position: center;
@@ -315,9 +314,11 @@ nav {
   flex-wrap: wrap;
   gap: var(--indent);
 }
+.work_item {
+  position: relative;
+}
 .work-img {
   flex-basis: calc((100% - var(--indent) * (var(--itemsteam) - 1)) / var(--itemsteam));
-  position: relative;
 }
 
 .work-title,
@@ -331,10 +332,13 @@ nav {
   margin-bottom: 50px;
 }
 .work-name {
-  display: block;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: inline-block;
+
+  width: 100%;
 
   background-color: var(--workbackgr);
   font-weight: 700;
@@ -345,6 +349,7 @@ nav {
 
   padding-top: 27px;
   padding-bottom: 27px;
+  /* min-height: 70px; */
 }
 /* TEAM */
 .team {
@@ -647,11 +652,9 @@ nav {
   align-items: center;
   justify-content: center;
 
-  padding: 0;
-
+  cursor: pointer;
   background-color: var(--white);
   border-radius: 50%;
-
   border: 1px solid var(--boxshadow1);
 }
 .modal-icon {
