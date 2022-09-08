@@ -618,7 +618,6 @@ nav {
 .portf-card {
   position: relative;
   overflow: hidden;
-  /* display: flex; */
 }
 .portf-img {
   display: inline-block;
@@ -645,7 +644,7 @@ nav {
   transform: translateY(101%);
   transition: transform var(--anim);
 }
-.portf-link:hover .portf-overlay{
+.portf-link:hover .portf-overlay {
   transform: translateY(0);
 }
 .portf-group {
