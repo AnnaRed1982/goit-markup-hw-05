@@ -677,6 +677,9 @@ nav {
   height: 100%;
 
   background-color: var(--teamshadow3);
+
+  opacity: 1;
+  transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -696,6 +699,11 @@ nav {
   box-shadow: 0px 1px 3px var(--teamshadow1), 0px 1px 1px var(--teamshadow2),
     0px 2px 1px var(--teamshadow3);
   border-radius: var(--btnradius);
+
+  visibility: visible;
+
+  transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
